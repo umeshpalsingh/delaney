@@ -1,0 +1,502 @@
+
+/*---------------- CSS Reset--------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  /* 1rem = 10px */
+  html {
+    font-size: 62.5%; 
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    transition: all .2s;
+ }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+ }
+
+  input, button, textarea, select {
+    font: inherit;
+ }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+ }
+
+/*-------------------------------------------------*/
+
+.navbar {
+    padding: 0;
+    background-color: #fff
+}
+
+.navbar::after {
+    content: '';
+    background-color: #071B3D;
+    max-width: 300px;
+    width: 100%;
+    height: -webkit-fill-available;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-nav {
+    z-index: 2;
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.logo {
+    width: 10rem;
+    max-width: 100%;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    font-weight: 500;
+    padding: 2.5rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #f8f8f8d8;
+}
+
+.link-a {
+    background-color: #263F6A;
+}
+
+.link-b {
+    background-color: #C03530;
+}
+
+.link-c {
+    background-color: #73264D;
+}
+
+.link-d {
+    background-color: #263F6A;
+}
+
+.link-e {
+    background-color: #4475A1;
+}
+
+.link-f {
+    background-color: #806000;
+}
+
+.link-g {
+    background-color: #4D1933;
+}
+
+.link-h {
+    background-color: #4475A1;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.header-section {
+    height: 90vh;
+    background-image: url('../images/header-bg.png');
+    background-repeat: no-repeat;
+}
+
+.delaney-logo-2 {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    max-width: 350px;
+    width: 100%;
+}
+
+.delaney-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #071B3D;
+    max-width: 40rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.delaney-park {
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/delaney-park-bg.png');
+    padding: 9rem 0;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+/* .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 37rem;
+} */
+
+/* .flex-container div {
+    border: 3px solid #333;
+} */
+
+/* .item-1 {
+    max-width: 30rem;
+    width: 100%;
+}
+
+.item-2 {
+    background: #fff;
+    max-width: 80rem;
+    padding: 6rem 4rem;
+    border: none;
+} */
+
+.row>* {
+    padding: 0;
+}
+
+.dp-column-2 {
+    height: 450px;
+    color: #071B3D;
+    border: none;
+    padding: 7rem 6rem;
+    background-color: #fff;
+}
+
+.dp-img {
+    max-height: 450px;
+    height: 100%;
+    margin-left: auto;
+}
+
+.dp-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.dp-content {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+    text-align: justify;
+}
+
+.funny-1 {
+    position: absolute;
+    right: 20px;
+    bottom: -100px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.doodling-section {
+    background: #4475A1;
+    padding: 9rem;
+    color: #fff;
+    position: relative;
+}
+
+.funny-2 {
+    position: absolute;
+    top: -238px;
+    left: 100px;
+}
+
+.doodle-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 4rem;
+}
+
+.doodle-content {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+    text-align: justify;
+    padding-right: 20px;
+    line-height: 35px;
+    margin-bottom: 4rem;
+}
+
+.delaney-btn {
+    background-color: #BA9230;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+
+.delaney-btn:hover {
+    background: #071B3D;
+}
+
+.doodling-box::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #c03530;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.doodling-box::after {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #f8f8f8;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+/*---------------------------------------------Swiper Slider-------------------------------------------*/
+
+.swiper-button-next, .swiper-button-prev {
+    width: auto;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: none;
+}
+
+.next-btn, .prev-btn {
+    width: 60px;
+    height: 60px;
+}
+
+.prev-btn {
+    transform: rotate(180deg);
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+/* .swiper-slide {
+    width: auto;
+    margin-right: 0 !important;
+} */
+
+.sd-img {
+    height: 365px;
+    margin-right: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1399px) {
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .funny-1 img {
+        width: 305px;
+    }
+
+    .sd-img {
+        height: 340px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .nav-link {
+        font-size: 1.16rem;
+    }
+
+    .link-a, .link-h {
+        padding-top: 33px;
+        padding-bottom: 34px;
+    }
+
+    .delaney-park {
+        padding: 6rem 0;
+    }
+
+    .dp-column-2 {
+        height: auto;
+        padding: 4rem 4rem 44px;
+    }
+    
+    .dp-img {
+        height: auto;
+    }
+
+    .dp-content {
+        line-height: 1.7;
+    }
+
+    .funny-2 {
+        top: -204px;
+        left: 30px;
+    }
+
+    .funny-2 img {
+        width: 210px;
+    }
+
+    .doodling-section {
+        padding: 9rem 5rem;
+    }
+
+    .sd-img {
+        height: 330px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    /* .navbar {
+        background-color: #071b3d41;
+    } */
+
+    .navbar::after {
+        width: 0;
+    }
+
+    .nav-link {
+        padding: 1.5rem;
+    }
+
+    .header-section {
+        background-image: linear-gradient(176deg, rgba(255,255,255,.6) 0%, rgba(205,199,213,.4) 100%)
+        ,url('../images/header-bg.png');
+    }
+
+    .dp-img {
+        margin: 0 auto;
+    }
+
+    .dp-heading {
+        font-size: 1.5rem;
+    }
+
+    .dp-content {
+        font-size: 1.2rem;
+    }
+
+    .dp-column-2 {
+        height: 369px;
+    }
+
+    .funny-1 img {
+        width: 250px;
+    }
+
+    .doodle-content {
+        line-height: 1.8;
+    }
+
+    .sd-img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .dp-heading {
+        font-size: 2rem;
+    }
+    .dp-content {
+        font-size: 1.4rem;
+    }
+    .dp-img {
+        width: 600px;
+    }
+    .funny-2 {
+        top: -194px;
+        left: 15px;
+    }
+    .funny-2 img {
+        width: 200px;
+    }
+
+    .sd-img {
+        margin: 0;
+    }
+
+    .doodling-box {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .dp-column-2 {
+        max-width: 365px;
+        margin: 0 auto;
+        height: auto;
+    }
+    .dp-img {
+        width: auto;
+    }
+    .funny-1 {
+        right: 0;
+    }
+    .funny-2 {
+        left: 0;
+    }
+
+    .doodling-section {
+        padding: 10rem 2rem;
+    }
+
+    .sd-img {
+        margin: 0 auto;
+    }
+
+    .funny-1 {
+        bottom: -80px;
+    }
+
+    .funny-1 img {
+        width: 170px;
+    }
+}
+
+@media (max-width: 375px) {
+    .delaney-park {
+        padding: 10px;
+    }
+
+    .dp-column-2 {
+        padding: 4rem 1rem;
+    }
+
+    .doodle-content {
+        padding-right: 0;
+    }
+}
